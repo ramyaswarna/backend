@@ -1,9 +1,10 @@
 import express from "express";
 const app = express()
 
-app.listen(8080,()=>{
-    console.log("Server started at port 8080.")
-})
+const port = process.env.PORT || 8080; // Use the PORT from the environment or default to 8080
+app.listen(port, () => {
+  console.log(`Server started at port ${port}`);
+});
 
 
 
