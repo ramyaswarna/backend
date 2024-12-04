@@ -5,6 +5,8 @@ app.listen(8080,()=>{
     console.log("Server started at port 8080.")
 })
 
+
+
 import {MongoClient, ObjectId} from "mongodb"; 
 const uri = "mongodb+srv://ramyaswarna725:rizerUKa2eNbMuct@cluster0.igylx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0" //my local computer has connected
 const client = new MongoClient(uri) 
@@ -13,6 +15,8 @@ import cors from "cors" //crossorigin - used for api calling
 app.use(express.json()) //this commad to receive and process the data
 app.use(cors());
 
+// const usr = ramyaswarna725
+// const ped = rizerUKa2eNbMuct
 
 // app.get("/customer",(req,res)=>{
 //     res.send("Name:Ramya Swarna Email:rswarna@gmail.com")
